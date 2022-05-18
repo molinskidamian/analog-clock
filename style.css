@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: #fff;
+}
+
+.clock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15rem;
+	width: 15rem;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 3px solid black;
+}
+
+.hour,
+.minute,
+.second {
+	position: absolute;
+	display: flex;
+	/* border: 2px solid red; */
+	justify-content: center;
+}
+
+.hour {
+	height: 11rem;
+	width: 11rem;
+}
+
+.hour::before {
+	content: '';
+	height: 50%;
+	width: 6px;
+	border-radius: 3px;
+	background-color: #000;
+}
+
+.minute {
+	height: 12rem;
+	width: 12rem;
+}
+
+.minute::before {
+	content: '';
+	height: 50%;
+	width: 4px;
+	border-radius: 2px;
+	background-color: orange;
+}
+
+.second {
+	height: 13rem;
+	width: 13rem;
+}
+
+.second::before {
+	content: '';
+	height: 50%;
+	width: 2px;
+	border-radius: 1px;
+	background-color: green;
+}
